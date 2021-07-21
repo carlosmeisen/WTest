@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.wtest.presentation.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.wtest.presentation.ui.list.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/navigation_insert"
+        android:name="com.wtest.presentation.ui.insert.InsertFragment"
+        android:label="@string/title_insert"
+        tools:layout="@layout/fragment_insert" />
+    <fragment
+        android:id="@+id/navigation_website"
+        android:name="com.wtest.presentation.ui.website.WebSiteFragment"
+        android:label="@string/title_website"
+        tools:layout="@layout/fragment_web_site" />
+</navigation>
